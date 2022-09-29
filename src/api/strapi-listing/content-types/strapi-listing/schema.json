@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "strapi_listings",
+  "info": {
+    "singularName": "strapi-listing",
+    "pluralName": "strapi-listings",
+    "displayName": "StrapiListing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SalePrice": {
+      "type": "float"
+    },
+    "ListedDate": {
+      "type": "date"
+    },
+    "ShortDescription": {
+      "type": "text"
+    },
+    "LongDescription": {
+      "type": "text"
+    },
+    "ForSale": {
+      "type": "boolean"
+    },
+    "LocationLatitude": {
+      "type": "float"
+    },
+    "LocationLongitute": {
+      "type": "float"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Waterfront",
+        "Land",
+        "House",
+        "Acreage"
+      ]
+    },
+    "address": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string",
+      "default": "Medina Lake Realty LLC"
+    },
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
